@@ -1,0 +1,61 @@
+\documentclass[12pt, a4paper]{article}
+
+% --- PACOTES DE LINGUAGEM E FONTE ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{helvet} % Fonte limpa (sem serifa) moderna
+\renewcommand{\familydefault}{\sfdefault}
+
+% --- PACOTES DE DESIGN E MARGENS ---
+\usepackage[margin=2.5cm]{geometry} % Margens confortáveis
+\usepackage{graphicx} % Para as imagens
+\usepackage{xcolor} % Para as cores do projeto
+
+% --- DEFINIÇÃO DA PALETA DE CORES (Baseado nos seus slides) ---
+\definecolor{DarkBackground}{HTML}{121212}
+\definecolor{BraveOrange}{HTML}{FF5722}
+\definecolor{BitwardenBlue}{HTML}{175DDC}
+\definecolor{AdguardGreen}{HTML}{28C86F}
+
+% --- PACOTES PARA CAIXAS DE AVISO (Dicas/Importante) ---
+\usepackage[most]{tcolorbox}
+
+% --- CONFIGURAÇÃO DE LINKS E METADADOS ---
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=BraveOrange,
+	urlcolor=BitwardenBlue,
+	pdftitle={Guia Prático de Segurança Digital},
+	pdfauthor={Naygno Barbosa Noia}
+}
+
+% --- CABEÇALHO E RODAPÉ ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textcolor{gray}{Segurança Digital - CMEI Araras}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ==========================================
+% INÍCIO DO DOCUMENTO
+% ==========================================
+\begin{document}
+	
+	% Puxa o arquivo da Capa e Contracapa
+	\input{capitulos/00_capa}
+	
+	\newpage
+	\tableofcontents % Gera o Sumário automaticamente
+	\newpage
+	
+	% Puxa os Capítulos
+	\input{capitulos/01_prefacio}
+	\newpage
+	\input{capitulos/02_brave}
+	\newpage
+	\input{capitulos/03_bitwarden}
+	
+\end{document}
