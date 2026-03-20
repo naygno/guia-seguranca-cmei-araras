@@ -33,7 +33,7 @@ Este documento foi tipografado utilizando a linguagem LaTeX para garantir estabi
 ### Passos para compilação
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/naygo/guia-seguranca-cmei.git
+   git clone https://github.com/naygo/guia-seguranca-cmei-araras.git
    ```
 2. Abra o arquivo `main.tex` no seu editor.
 3. Certifique-se de que a compilação de pacotes automáticos (*on-the-fly*) está ativada.
