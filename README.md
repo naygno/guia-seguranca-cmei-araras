@@ -27,8 +27,28 @@ O manual instrui o público leigo a configurar um "Ecossistema de Defesa Pessoal
 Este documento foi tipografado utilizando a linguagem LaTeX para garantir estabilidade e qualidade editorial profissional.
 
 ### Pré-requisitos
-* Distribuição TeX (Recomendado:[MiKTeX](https://miktex.org/))
+* Distribuição TeX (Recomendado: [MiKTeX](https://miktex.org/))
 * Um editor LaTeX (Recomendado: [TeXstudio](https://www.texstudio.org/))
+
+### 📂 Estrutura de Diretórios
+```text
+guia-seguranca-cmei/
+│
+├── main.tex                 # Arquivo principal
+├── referencias.bib          # (Opcional) citar o NIST
+│
+├── imagens/                 # PNGs
+│   ├── leao_capa.png
+│   ├── cofre_bitwarden.png
+│   └── qr_code.png
+│
+└── capitulos/               # Separado por seções
+    ├── 00_capa.tex
+    ├── 01_prefacio.tex
+    ├── 02_brave.tex
+    ├── 03_bitwarden.tex
+    └── 04_adguard.tex
+```
 
 ### Passos para compilação
 1. Clone este repositório:
