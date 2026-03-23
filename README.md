@@ -66,3 +66,6 @@ Acadêmico de Ciência da Computação - UFBRA
 
 ## 📄 Licença
 Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes. O compartilhamento deste material para fins educacionais é fortemente encorajado.
+
+
+

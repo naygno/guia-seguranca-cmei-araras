@@ -1,32 +1,77 @@
 \documentclass[12pt, a4paper]{article}
 
-% --- PACOTES DE LINGUAGEM E FONTE ---
+% --- PACOTES BÁSICOS ---
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[portuguese]{babel}
-\usepackage{helvet} % Fonte limpa (sem serifa) moderna
+\usepackage{helvet} % Fonte sem serifa, melhor legibilidade digital
 \renewcommand{\familydefault}{\sfdefault}
+\usepackage[autostyle]{csquotes} % Resolve aspas duplas ("texto") automaticamente
 
-% --- PACOTES DE DESIGN E MARGENS ---
-\usepackage[margin=2.5cm]{geometry} % Margens confortáveis
-\usepackage{graphicx} % Para as imagens
-\usepackage{xcolor} % Para as cores do projeto
+% --- DESIGN, CORES E DARK MODE ---
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{pagecolor}
 
-% --- DEFINIÇÃO DA PALETA DE CORES (Baseado nos seus slides) ---
-\definecolor{DarkBackground}{HTML}{121212}
+% --- JUSTIFICA O TEXTO DENTRO DOS MINIPAGES ---
+\usepackage{ragged2e}
+
+% Paleta de Cores (Tema Nord + Seu Projeto)
+\definecolor{NordBackground}{HTML}{2e3440} % Azul acinzentado perfeito
+\definecolor{NordText}{HTML}{D8DEE9}       % Cinza gelo para contraste suave
 \definecolor{BraveOrange}{HTML}{FF5722}
 \definecolor{BitwardenBlue}{HTML}{175DDC}
 \definecolor{AdguardGreen}{HTML}{28C86F}
 
-% --- PACOTES PARA CAIXAS DE AVISO (Dicas/Importante) ---
+% Aplica o Modo Escuro
+\pagecolor{NordBackground}
+\color{NordText}
+
+% --- ÍCONES E MOLDURAS ---
+\usepackage{fontawesome5}
 \usepackage[most]{tcolorbox}
 
-% --- CONFIGURAÇÃO DE LINKS E METADADOS ---
+% --- COMANDO MÁGICO PARA IMAGENS COM BORDA ---
+% Uso: \imagemSuave[tamanho]{caminho_da_imagem.png}
+\newcommand{\imagemSuave}[2][0.8\textwidth]{%
+	\begin{tcolorbox}[colback=NordBackground, colframe=NordBackground, 
+		arc=3mm, outer arc=3mm, 
+		boxrule=0pt, enhanced, drop fuzzy shadow=black!50!NordBackground]
+		\centering
+		\includegraphics[width=#1]{#2}
+	\end{tcolorbox}
+}
+
+% --- LAYOUT E COLUNAS ---
+\usepackage{multicol}
+\usepackage{caption}
+\usepackage{subcaption} % Para duas imagens lado a lado
+\usepackage{chngcntr}
+\counterwithout{subfigure}{figure} % Desvincula a letrinha da figura principal
+\counterwithin{subfigure}{section} % Faz a letrinha zerar só quando muda de \section
+
+% --- BIBLIOGRAFIA ---
+\usepackage[backend=biber, style=abnt]{biblatex} 
+\addbibresource{referencias.bib}
+
+% --- LINKS E METADADOS ---
 \usepackage{hyperref}
 \hypersetup{
 	colorlinks=true,
 	linkcolor=BraveOrange,
 	urlcolor=BitwardenBlue,
+	citecolor=AdguardGreen,
+	pdftitle={Guia Prático de Segurança Digital - CMEI Araras},
+	pdfauthor={Naygno Barbosa Noia}
+}
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=BraveOrange,
+	urlcolor=BitwardenBlue,
+	citecolor=AdguardGreen,
+	pdfnewwindow=true, % <--- Coloque aqui!
 	pdftitle={Guia Prático de Segurança Digital},
 	pdfauthor={Naygno Barbosa Noia}
 }
@@ -34,28 +79,56 @@
 % --- CABEÇALHO E RODAPÉ ---
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhf{}
-\fancyhead[L]{\textcolor{gray}{Segurança Digital - CMEI Araras}}
-\fancyfoot[C]{\thepage}
+\fancyhf{} % Limpa todos os campos
+%\setlength{\headheight}{15pt}
+\setlength{\headheight}{25pt}
+
+% Cabeçalho: Esquerda = Título, Direita = Número da Página
+\fancyhead[L]{\textcolor{NordText}{\small \textit{Guia Prático de Segurança Digital}}}
+\fancyhead[R]{\textcolor{NordText}{\textbf{\thepage}}}
+
+% Rodapé: Apenas uma linha decorativa
 \renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{NordText}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{NordText}\leaders\hrule height \footrulewidth\hfill}}
+\fancyfoot[C]{\textcolor{NordText}{\scriptsize \faGithub\ naygno/guia-seguranca-cmei-araras}}
+
+% Macro para formatar os passos dos tutoriais
+% #1 = Cor (BraveOrange, AdguardGreen, etc)
+% #2 = Número do Passo
+% #3 = Descrição da ação
+\newcommand{\passo}[3]{%
+	\justifying \noindent \textbf{\textcolor{#1}{\faMobile* \ Passo #2: }}%
+	{\small #3}%
+}
 
 % ==========================================
 % INÍCIO DO DOCUMENTO
 % ==========================================
 \begin{document}
 	
-	% Puxa o arquivo da Capa e Contracapa
+	% 1. CAPA (A primeira coisa que o leitor vê)
 	\input{capitulos/00_capa}
-	
-	\newpage
-	\tableofcontents % Gera o Sumário automaticamente
 	\newpage
 	
-	% Puxa os Capítulos
-	\input{capitulos/01_prefacio}
+	% 2. SUMÁRIO
+	\tableofcontents 
+	\newpage
+	
+	% 3. CORPO DO E-BOOK (Capítulos)
+	%\input{capitulos/01_prefacio}
 	\newpage
 	\input{capitulos/02_brave}
-	\newpage
+	%\newpage
 	\input{capitulos/03_bitwarden}
+	\newpage
+	%\input{capitulos/04_adguard}
+	%\newpage
+	%\input{capitulos/05_cartoes_e_golpes}
+	\newpage
+	
+	% 4. REFERÊNCIAS BIBLIOGRÁFICAS
+	\printbibliography[heading=bibintoc, title={Referências}]
 	
 \end{document}
