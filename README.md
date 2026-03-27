@@ -54,7 +54,7 @@ guia-seguranca-cmei-araras/
 ### Passos para compilação
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/naygNo/guia-seguranca-cmei-araras.git
+   git clone https://github.com/naygno/guia-seguranca-cmei-araras.git
    ```
 2. Abra o arquivo `main.tex` no seu editor.
 3. Certifique-se de que a compilação de pacotes automáticos (*on-the-fly*) está ativada.
