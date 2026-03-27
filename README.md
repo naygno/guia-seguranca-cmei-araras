@@ -32,8 +32,6 @@ Este documento foi tipografado utilizando a linguagem LaTeX para garantir estabi
 
 ### 📂 Estrutura de Diretórios
 ```text
-g### 📂 Estrutura de Diretórios
-```text
 guia-seguranca-cmei-araras/
 │
 ├── main.tex                 # Arquivo principal de compilação
