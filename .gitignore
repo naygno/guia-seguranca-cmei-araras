@@ -21,6 +21,9 @@
 *.bcf
 *.toc
 *.bcf
+main.bcf
+main.run.xml
+Documentacao.md
 
 # OS generated files
 .DS_Store
