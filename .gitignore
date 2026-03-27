@@ -20,6 +20,7 @@
 *.out
 *.bcf
 *.toc
+*.bcf
 
 # OS generated files
 .DS_Store
