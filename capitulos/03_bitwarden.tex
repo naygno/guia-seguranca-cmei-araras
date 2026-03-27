@@ -3,6 +3,7 @@
 O nome do seu cachorro não é uma senha segura, e anotar senhas em um caderno é muito perigoso. O segredo da segurança não é a dificuldade (símbolos estranhos), é o \textbf{TAMANHO}. 
 
 \vspace{0.3cm}
+\noindent
 Tentar decorar senhas para 50 sites diferentes é impossível. É por isso que usamos um \textbf{Gerenciador de Senhas}.
 
 \vspace{0.3cm}
@@ -16,7 +17,7 @@ Tentar decorar senhas para 50 sites diferentes é impossível. É por isso que u
 \subsection*{Como criar o seu Cofre Digital:}
 \begin{enumerate}
 	\item Baixe o aplicativo \textbf{Bitwarden} no seu celular.
-
+	
 	\begin{center}
 		\begin{minipage}{\linewidth}
 			
@@ -50,12 +51,49 @@ Tentar decorar senhas para 50 sites diferentes é impossível. É por isso que u
 		\end{minipage}
 	\end{center}
 	
+	%\item Crie uma conta usando o seu e-mail.
+	%\item Invente UMA única \textbf{\enquote{Senha Mestra}}. Use uma frase longa (conformes os padrões \cite{NIST2025}) que faça sentido para você (Exemplo: \textit{\enquote{eu amo bolo de cenoura com cafe}}).
 	\item Crie uma conta usando o seu e-mail.
-	\item Invente UMA única \textbf{\enquote{Senha Mestra}}. Use uma frase longa que faça sentido para você (Exemplo: \textit{\enquote{Eu amo bolo de cenoura com cafe}}).
-	\item Vá nas \textit{Configurações > Segurança} do aplicativo e ative o \textbf{Desbloqueio por Biometria} (Impressão Digital).
+	\item Invente UMA única \textbf{\enquote{Senha Mestra}}. Use uma frase longa (conforme as recomendações do NIST \cite{NIST2025}) que faça sentido para você (Exemplo: \textit{\enquote{eu amo bolo de cenoura com cafe}}). 
+	%\item Opcionalmente, vá em \textit{Configurações > Segurança} do aplicativo e ative o \textbf{Desbloqueio por Biometria} (Impressão Digital). Segundo o NIST, a biometria pode ser usada como fator de conveniência, mas nunca substitui a senha mestra — ela deve ser considerada apenas um mecanismo de desbloqueio rápido.
+	%\item Vá nas \textit{Configurações > Segurança} do aplicativo e ative o \textbf{Desbloqueio por Biometria} (Impressão Digital).
 \end{enumerate}
 
-\subsection*{Passo a Passo para Configurar o Bitwarden:}
+\subsection*{Suas informações já foram vazadas? \faSearch}
+
+Antes de criarmos o seu cofre, vamos fazer um teste de realidade. Todos os dias, sites e aplicativos são invadidos e milhões de senhas são roubadas e vendidas para criminosos. 
+
+
+\vspace{0.3cm}
+\begin{figure}[h]
+	\centering
+	%\imagemSuave[0.6\textwidth]{imagens/cofre_bitwarden.png} 
+	\includegraphics[width=0.6\textwidth]{imagens/hibp_dark_logo.png}
+	\caption*{(\citeauthor{haveibeenpwned_app} \citefield{haveibeenpwned_app}{version} - Versão oficial)}
+\end{figure}
+
+\vspace{0.3cm}
+\noindent
+Existe um site mundialmente respeitado chamado \textbf{Have I Been Pwned?} (que significa: \enquote{Eu fui exposto?}). Ele funciona como uma lista de \enquote{achados e perdidos} de dados roubados.
+
+\vspace{0.3cm}
+\begin{center}
+	\begin{minipage}{0.6\linewidth}
+		\centering
+		\textbf{\textcolor{red}{\faExclamationTriangle \ Teste seu e-mail agora:}}\\[0.3cm]
+		\href{https://bfaxke.short.gy/hibeenpwned-email-check}{
+			\includegraphics[width=0.8\linewidth]{imagens/qr_hibeenpwned_email_check.png} 
+		}\\[0.1cm]
+		{\scriptsize \url{https://haveibeenpwned.com/}}
+	\end{minipage}
+\end{center}
+\vspace{0.3cm}
+
+\textbf{Como usar:} Digite seu e-mail principal no site. 
+\begin{itemize}
+	\item \textbf{Se a tela ficar Vermelha:} Significa que seus dados foram vazados em alguma invasão antiga. \textbf{Não entre em pânico!} Isso apenas confirma que você precisa urgentemente do \textbf{Bitwarden} para trocar suas senhas.
+	\item \textbf{Se a tela ficar Verde:} Parabéns! Seus dados estão seguros por enquanto. Use as ferramentas deste guia para que eles continuem assim.
+\end{itemize}
 
 \subsection*{Muito Além das Senhas: Sua Carteira Blindada}
 
@@ -67,22 +105,133 @@ O Bitwarden não guarda apenas senhas. Ele é um cofre digital completo desenhad
 	\item \textbf{Anotações Seguras:} Sabe a senha do Roteador Wi-Fi ou aquele \enquote{Código de Recuperação} do WhatsApp? Crie uma anotação segura para que só você tenha acesso.
 \end{itemize}
 
-\subsection*{A Configuração do PIN e a Pergunta Crítica}
+\subsection*{Acesso Rápido: Biometria e PIN}
 
-Ao configurar o acesso rápido (Biometria ou PIN) para não ter que digitar sua frase-senha o tempo todo, o aplicativo fará uma pergunta muito importante: \textbf{\enquote{Exigir senha principal no reinício do aplicativo?}}
+Para não ter que digitar sua frase-senha o tempo todo, o Bitwarden oferece duas opções. A recomendação é usar a \textbf{Biometria (Impressão Digital)}, por ser o método mais seguro e prático.
 
-\begin{figure}[h]
+\begin{itemize}
+	\item \textbf{Opção A (Recomendada): Biometria.} Basta ativar nas configurações. O celular usará o seu dedo para abrir o cofre. É simples, direto e não faz perguntas extras.
+	\item \textbf{Opção B: Código PIN.} Se o seu celular não tem leitor de digital, você pode criar um código numérico. 
+\end{itemize}
+
+\subsection*{Passo a Passo para Configurar Biometria e PIN:}
+
+Na tela inicial do Bitwarden realize os seguinte passos:
+
+\vspace{0.3cm}
+% --- BLOCO DE IMAGENS 2 ---
+\noindent
+\begin{minipage}{\textwidth}
 	\centering
-	% Substitua pelo nome do seu arquivo da Imagem 6
-	\imagemSuave[0.6\linewidth]{imagens/bitwarden_aviso_reinicio.png}
-\end{figure}
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/bitwaden_conf_01.png}\\[0.2cm]
+		\passo{BitwardenBlue}{1}{Toque no ícone de \enquote{Configurações}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/bitwaden_conf_02.png}\\[0.2cm]
+		\passo{BitwardenBlue}{2}{Agora, em \enquote{Segurança de conta}}
+	\end{minipage}
+\end{minipage}
 
-\begin{tcolorbox}[colback=NordBackground, colframe=BraveOrange, coltext=white, title=\faShieldAlt \ Qual a diferença entre Sim e Não?]
-	\textbf{Se você escolher \enquote{NÃO}:} O aplicativo deixará uma cópia da sua chave do cofre no celular, protegida apenas pelo seu PIN. É prático, mas se o seu celular for roubado, um PIN de 4 números é fácil de ser quebrado por criminosos.
+\vspace{0.3cm}
+\noindent
+Seu dispositivo pode ter uma e/ou duas opções de desbloqueio rápido: Biometria ou PIN. Se tiver biometria, siga as instruções seguintes: 
+
+% --- BLOCO DE IMAGENS 2 ---
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/bitwaden_conf_03.png}\\[0.2cm]
+		\passo{BitwardenBlue}{3}{Toque em \enquote{Desbloquear com biometria}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/bitwaden_conf_04.png}\\[0.2cm]
+		\passo{BitwardenBlue}{4}{Toque no \enquote{Sensor de digital} do dispositivo}
+	\end{minipage}
+\end{minipage}
+
+\vspace{0.3cm}
+\noindent
+Ótimo, você conseguiu acionar o desbloqueio rápido por impressão digital.
+
+\subsection*{Configurando a Segurança do PIN}
+
+Agora, se seu dispositivo tem apenas PIN como opção de desbloqueio rápido faça o seguinte, ainda na tela \enquote{Segurança de conta}:
+
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/bitwaden_conf_05.png}\\[0.2cm]
+		\passo{BitwardenBlue}{5}{Toque em\enquote{Desbloquear com PIN}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/bitwaden_conf_06.png}\\[0.2cm]
+		\passo{BitwardenBlue}{6}{Digite pelo menos 4 caracteres}
+	\end{minipage}
+\end{minipage}
+
+\vspace{0.3cm}
+\noindent
+Ao definir o seu código PIN, o Bitwarden exibirá uma caixa de diálogo crucial. Esta é a tela que garante que suas senhas não fiquem expostas caso alguém descubra seu PIN de 4 ou mais caracteres (números).
+
+\vspace{0.5cm}
+
+\begin{center}
+	\noindent
+	% Tela Real (Esquerda)
+	\includegraphics[align=c, width=0.25\textwidth]{imagens/bitwarden_aviso_pin.png} 
+	\hfill
+	% ZOOM (Direita) - Agora você pode aumentar o TRIM sem medo
+	\includegraphics[align=c, trim={0cm 9.4cm 0cm 8.9cm}, clip, width=0.7\textwidth]{imagens/bitwarden_aviso_pin_dois.png}\\[0.2cm]
+	\centerline{\passo{BitwardenBlue}{7}{Confirme \enquote{Sim}}}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{tcolorbox}[colback=NordBackground, colframe=BraveOrange, coltext=white, title=\faQuestionCircle \ \textbf{O que responder nesta tela?}]
+	A pergunta é: \enquote{Exigir senha principal no reinício do aplicativo?}
 	
-	\textbf{Se você escolher \enquote{SIM} (Nossa Recomendação):} O celular nunca guarda a chave. Se o aparelho for roubado e desligado, o cofre se tranca totalmente. Quando o celular for reiniciado, você terá que digitar a sua \enquote{Senha Mestra} (a frase longa) uma vez para reabrir o cofre. No dia a dia normal, o seu PIN e a sua digital continuarão funcionando rapidamente!
+	\textbf{Nossa recomendação: Clique em \enquote{SIM}.}
+	
+	\textbf{Por que?} Se você marcar \enquote{Não}, o Bitwarden deixará o seu cofre mais vulnerável. Ao marcar \enquote{Sim}, você garante que toda vez que o celular for desligado, o sistema \enquote{esqueça} a chave do cofre, exigindo sua frase-senha longa para abrir novamente. É a segurança máxima para o seu dinheiro e sua privacidade.
 \end{tcolorbox}
 
-\begin{tcolorbox}[colback=NordBackground, colframe=BraveOrange, title=\faExclamationTriangle\ A Regra de Ouro]
+\vspace{0.3cm}
+\noindent
+Agora seu dispositivo vai apresentar uma das seguintes possibilidades:
+
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/bitwaden_conf_10.png}\\[0.2cm]
+		\passo{BitwardenBlue}{8}{Desbloqueio com \enquote{Impressão Digital}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/bitwaden_conf_11.png}\\[0.2cm]
+		\passo{BitwardenBlue}{9}{Desbloqueio com \enquote{PIN}}
+	\end{minipage}
+\end{minipage}
+
+\vspace{0.3cm}
+\noindent
+\textbf{Sugestão:} Se seu dispositivo tiver as duas opções disponíveis, use ambas! Pois assim, nos casos em que o sensor de digital falhar, você terá o PIN como alternativa viável.
+
+\vspace{0.5cm}
+\begin{tcolorbox}[colback=NordBackground, colframe=BraveOrange, title=\faExclamationTriangle\ \textbf{A Regra de Ouro}]
 	\textcolor{white}{O Bitwarden não possui a opção \enquote{Esqueci minha senha}. Anote a sua Senha Mestra em um pedaço de papel e guarde no fundo de uma gaveta segura na sua casa. Se esquecer a senha mestra, o cofre ficará trancado para sempre!}
 \end{tcolorbox}

@@ -32,28 +32,31 @@ Este documento foi tipografado utilizando a linguagem LaTeX para garantir estabi
 
 ### 📂 Estrutura de Diretórios
 ```text
-guia-seguranca-cmei/
+g### 📂 Estrutura de Diretórios
+```text
+guia-seguranca-cmei-araras/
 │
-├── main.tex                 # Arquivo principal
-├── referencias.bib          # (Opcional) citar o NIST
+├── main.tex                 # Arquivo principal de compilação
+├── referencias.bib          # Arquivo de referências (BibTeX)
 │
-├── imagens/                 # PNGs
-│   ├── leao_capa.png
-│   ├── cofre_bitwarden.png
-│   └── qr_code.png
+├── imagens/                 # Ativos visuais (PNGs, logos e capturas de tela)
+│   ├── ...
 │
-└── capitulos/               # Separado por seções
+└── capitulos/               # Seções modulares do E-book
     ├── 00_capa.tex
     ├── 01_prefacio.tex
     ├── 02_brave.tex
     ├── 03_bitwarden.tex
-    └── 04_adguard.tex
+    ├── 04_adguard.tex
+    ├── 05_cartoes_e_golpes.tex
+    ├── 06_duckduckgo.tex
+    └── 06_conclusao_final.tex
 ```
 
 ### Passos para compilação
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/naygo/guia-seguranca-cmei-araras.git
+   git clone https://github.com/naygNo/guia-seguranca-cmei-araras.git
    ```
 2. Abra o arquivo `main.tex` no seu editor.
 3. Certifique-se de que a compilação de pacotes automáticos (*on-the-fly*) está ativada.

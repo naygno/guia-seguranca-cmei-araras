@@ -2476,6 +2476,25 @@
     <bcf:citekey order="9" intorder="1">bitwarden_app</bcf:citekey>
     <bcf:citekey order="10" intorder="1">bitwarden_app</bcf:citekey>
     <bcf:citekey order="11" intorder="1">bitwarden_app</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">NIST2025</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">haveibeenpwned_app</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">haveibeenpwned_app</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">haveibeenpwned_app</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">haveibeenpwned_app</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">adguard_dns</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">adguard_dns</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">adguard_dns</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">adguard_dns</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">duckduckgo_app</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">duckduckgo_app</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">duckduckgo_app</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">duckduckgo_app</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">DuckDuckGoPrivacy2023</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">SimpleLogin2026</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">simplelogin_app</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">simplelogin_app</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">simplelogin_app</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">simplelogin_app</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

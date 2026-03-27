@@ -13,6 +13,8 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{pagecolor}
+\usepackage{graphbox} % Permite o parâmetro 'align' no \includegraphics
+\usepackage{enumitem}
 
 % --- JUSTIFICA O TEXTO DENTRO DOS MINIPAGES ---
 \usepackage{ragged2e}
@@ -23,7 +25,12 @@
 \definecolor{BraveOrange}{HTML}{FF5722}
 \definecolor{BitwardenBlue}{HTML}{175DDC}
 \definecolor{AdguardGreen}{HTML}{28C86F}
-
+\definecolor{AdguardDNSBlue}{HTML}{3C81F6}
+\definecolor{WhiteColor}{HTML}{FFFFFF}
+\definecolor{DuckDuckGoOrange}{HTML}{DE5833}
+\definecolor{SimpleLoginDarkPink}{HTML}{ED2E7C}
+\definecolor{TextGreen}{HTML}{38A138}
+\definecolor{TextRed}{HTML}{FF0000}
 % Aplica o Modo Escuro
 \pagecolor{NordBackground}
 \color{NordText}
@@ -98,9 +105,14 @@
 % #1 = Cor (BraveOrange, AdguardGreen, etc)
 % #2 = Número do Passo
 % #3 = Descrição da ação
+%\newcommand{\passo}[3]{%
+%	\justifying \noindent \textbf{\textcolor{#1}{\faMobile* \ Passo #2: }}%
+%	{\small #3}%
+%}
 \newcommand{\passo}[3]{%
+	%\raggedright
 	\justifying \noindent \textbf{\textcolor{#1}{\faMobile* \ Passo #2: }}%
-	{\small #3}%
+	{\small #3}
 }
 
 % ==========================================
@@ -117,18 +129,21 @@
 	\newpage
 	
 	% 3. CORPO DO E-BOOK (Capítulos)
-	%\input{capitulos/01_prefacio}
+	\input{capitulos/01_prefacio}
 	\newpage
 	\input{capitulos/02_brave}
-	%\newpage
+	\newpage
 	\input{capitulos/03_bitwarden}
 	\newpage
-	%\input{capitulos/04_adguard}
-	%\newpage
-	%\input{capitulos/05_cartoes_e_golpes}
+	\input{capitulos/04_adguard}
 	\newpage
-	
+	\input{capitulos/05_cartoes_e_golpes}
+	\newpage
+	\input{capitulos/06_duckduckgo}
+	\newpage
 	% 4. REFERÊNCIAS BIBLIOGRÁFICAS
 	\printbibliography[heading=bibintoc, title={Referências}]
+	\newpage
+	\input{capitulos//06_conclusao_final}
 	
 \end{document}

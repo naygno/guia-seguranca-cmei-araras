@@ -1,24 +1,513 @@
 \section{Protegendo as Crianças: O Filtro AdGuard \faChild}
 
+\noindent
 Como garantir que seu filho não acesse sites adultos, de violência extrema ou de apostas no celular? Nós vamos colocar um filtro direto no \enquote{cano} de internet do aparelho.
 
-Diferente de aplicativos espiões pesados, essa é uma configuração \enquote{escondida} no próprio sistema do seu celular que limpa a internet antes mesmo de ela aparecer na tela.
+\vspace{0.3cm} % Respiro
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{imagens/adguard_dns_dark.png}
+	\caption*{(\citeauthor{adguard_dns} \citefield{adguard_dns}{version} - Versão oficial)}
+\end{figure}
+
+\vspace{0.3cm}
+\noindent
+Diferente de aplicativos espiões pesados, essa é uma configuração \enquote{escondida} no próprio sistema do seu celular (uma opção global que protege toda a sua navegação) ou diretamente no navegador (uma opção direcionada). Ela limpa a internet antes mesmo de o conteúdo aparecer na tela.
+
+\vspace{0.3cm}
+\noindent
+Use os endereços fornecidos nos próximos passos ou obtenha-os diretamente da fonte pelo QR Code abaixo.
+
+\vspace{0.3cm} % Respiro
+\begin{center}
+	\begin{minipage}{0.5\linewidth}
+		\centering
+		\textbf{\textcolor{AdguardDNSBlue}{\faAndroid \quad \faApple \quad \faDesktop}}\\[0.5cm]
+		\href{https://bfaxke.short.gy/adguard-public-dns}{
+			\includegraphics[width=0.8\linewidth]{imagens/qr_adguard_public_dns.png}
+		}\\[0.1cm]
+		{\scriptsize (Toque ou escaneie)}
+	\end{minipage}
+\end{center}
+\vspace{0.3cm} % Respiro após as imagens
 
 \subsection*{Como configurar no Android:}
-\begin{enumerate}
-	\item Abra as \textbf{Configurações} do celular.
-	\item Procure por \textbf{Rede e Internet} (ou use a Lupa \faSearch\ e digite ``DNS'').
-	\item Clique na opção \textbf{DNS Privado}.
-	\item Marque a opção \textit{\enquote{Nome do host do provedor de DNS}}.
-	\item Digite exatamente este código (tudo minúsculo): 
-	
-	\begin{center}
-		\textbf{\textcolor{AdguardGreen}{family.adguard-dns.com}}
-	\end{center}
-	
-	\item Clique em \textbf{Salvar}.
-\end{enumerate}
 
-\begin{tcolorbox}[colback=NordBackground, colframe=AdguardGreen, title=\faCheckCircle\ Vantagem Extra]
+\noindent
+Após escanear o QR Code ou tocar no link acima, você será direcionado para a página dos servidores de DNS públicos do AdGuard, como mostrado no \textbf{Passo 1} abaixo. Como o nosso objetivo é economizar espaço no seu celular (sem instalar novos aplicativos), ignore a primeira opção da tela e vá direto para a \enquote{Opção 2}, conforme indica o \textbf{Passo 2}:
+\vspace{0.3cm}
+
+% --- BLOCO DE IMAGENS 2 ---
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_01.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{1}{Nesta página, desça até a \enquote{Opção 2}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_02.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{2}{Toque em \enquote{Opção 2} \newline}
+	\end{minipage}
+\end{minipage}
+
+
+\vspace{0.5cm}
+\noindent
+Ao tocar na \enquote{Opção 2}, aparecerá o menu para o \enquote{Android}. Toque nele, como mostra o \textbf{Passo 3}, e role a tela para baixo até encontrar a seção \textbf{\enquote{Servidor de proteção familiar}}, como mostra o \textbf{Passo 4}: 
+
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_03.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{3}{Toque em \enquote{Android} \newline} % CUIDADO!!!, essas linhas são para ajustar a altura da imagem nessa passo com a da imagem do passo anterior.
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_04.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{4}{Toque na região indicada para copiar}
+	\end{minipage}
+\end{minipage}
+
+\vspace{0.5cm}
+\noindent
+Após ter copiado o endereço para a área de transferência, vamos para as configurações do seu dispositivo.
+
+\vspace{0.3cm}
+\noindent
+Se o menu de configurações do seu dispositivo não estiver fácil de achar, você tem duas maneiras de acessá-lo. A primeira é puxando a barra superior (onde ficam a hora e as notificações) duas vezes para baixo e tocando no ícone de engrenagem. A outra maneira é usar a barra de pesquisa do Android para encontrar o aplicativo \enquote{Configurar} (ou Configurações). Confira nos \textbf{Passos 5 e 6} abaixo essas duas maneiras: 
+
+\vspace{0.3cm}
+
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_05.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{5}{Toque na \enquote{Engrenagem} \newline} % CUIDADO!!!, essas linhas são para ajustar a altura da imagem nessa passo com a da imagem do passo anterior.
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_06.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{6}{Toque em \enquote{Configurar}}
+	\end{minipage}
+\end{minipage}
+\vspace{0.3cm}
+
+\noindent
+Com as configurações abertas, toque na barra de pesquisa (\textbf{Passo 7}) e digite \enquote{DNS} (\textbf{Passo 8}), ou \enquote{DNS particular}, dependendo do modelo do seu celular. Acompanhe abaixo:
+
+\vspace{0.3cm}
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_07.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{7}{Toque em \enquote{Pesquisar configurações}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_08.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{8}{Digite \enquote{DNS} \newline} % CUIDADO!!!, essas linhas são para ajustar a altura da imagem nessa passo com a da imagem do passo anterior.
+	\end{minipage}
+\end{minipage}
+\vspace{0.3cm}
+
+\noindent
+O \textbf{Passo 8} nos mostra onde se encontram as configurações de DNS do nosso dispositivo. Não precisa procurar mais: basta tocar em \enquote{DNS particular} para acessar o menu correto. Veja abaixo:
+
+\vspace{0.3cm}
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_09.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{9}{Toque em \enquote{DNS particular}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_10.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{10}{Toque em \enquote{Avançado}}
+	\end{minipage}
+\end{minipage}
+\vspace{0.3cm}
+
+\noindent
+Estamos quase lá. Lembre-se de que já copiamos o endereço do servidor público AdGuard DNS Family no \textbf{Passo 4:}
+
+\vspace{0.3cm}
+% Caixa isolada para facilitar a cópia no celular
+\noindent
+\begin{center}
+	\begin{tcolorbox}[
+		colback=NordBackground, 
+		colframe=AdguardDNSBlue, 
+		width=0.8\linewidth, 
+		halign=center,       % Centraliza horizontalmente
+		valign=center,       % Centraliza verticalmente
+		boxrule=1pt, 
+		arc=2mm,
+		top=3mm,             % Ajuste fino da margem superior
+		bottom=3mm           % Ajuste fino da margem inferior
+		]
+		\Large \sffamily \textbf{\textcolor{AdguardDNSBlue}{family.adguard-dns.com}}
+	\end{tcolorbox}
+	{\scriptsize (Selecione e copie)}
+\end{center}
+\vspace{0.3cm}
+
+\noindent
+Se você não lembra, copie ou anote o endereço acima (exatamente como está, tudo minúsculo), ou retorne ao \textbf{Passo 4} para copiar novamente. Após realizar o \textbf{Passo 10}, a opção \textbf{DNS particular} ficará visível; toque nela. Acompanhe nas imagens abaixo:
+
+\vspace{0.3cm}
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_11.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{11}{Toque em \enquote{DNS particular}} \newline
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_12.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{12}{Toque em \enquote{Nome do host do provedor de DNS particular}}
+	\end{minipage}
+\end{minipage}
+\vspace{0.3cm}
+
+\noindent
+Com o \textbf{Passo 12} realizado, ficará disponível um campo para digitar o endereço do AdGuard Family. Veja a seguir:
+
+\vspace{0.3cm}
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_13.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{13}{Digite ou cole o \enquote{Nome do host de DNS} no campo vazio}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_14.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{14}{Desta forma} \newline
+	\end{minipage}
+\end{minipage}
+\vspace{0.3cm}
+
+\noindent
+Feito isso, basta salvar para que o DNS seja aplicado no seu Android. Veja como deve ficar nos passos seguintes:
+
+\vspace{0.3cm}
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_15.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{15}{Toque em \enquote{Salvar}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_16.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{16}{Pronto!}
+	\end{minipage}
+\end{minipage}
+\vspace{0.3cm}
+
+\subsection*{Como configurar no iOS:}
+
+\noindent
+Para realizar essa configuração no iOS, você precisa baixar ou criar um perfil de configuração. Para isso, vá até a página do \textbf{Passo 1} e escolha um servidor DNS entre os disponíveis e siga o passo a passo indicado nas instruções. 
+
+% \newpage % Descomente se precisar que a seção do navegador comece em uma nova página
+
+\subsection*{Como configurar diretamente no Navegador:}
+
+\noindent
+Vamos usar aqui o navegador Brave, mas, com as devidas adaptações, o processo é semelhante em qualquer navegador de sua preferência. A ideia aqui é direcionar a filtragem apenas para um navegador específico.
+\vspace{0.3cm} % Respiro após as imagens
+
+\vspace{0.3cm}
+\noindent
+Assim como na configuração anterior, use o QR Code abaixo ou simplesmente copie o endereço do servidor de proteção familiar:
+
+\vspace{0.3cm} % Respiro
+\noindent
+\begin{center}
+	\begin{minipage}{0.5\linewidth}
+		\centering
+		\textbf{\textcolor{AdguardDNSBlue}{\faAndroid \quad \faApple \quad \faDesktop}}\\[0.5cm]
+		\href{https://bfaxke.short.gy/adguard-public-dns}{
+			\includegraphics[width=0.8\linewidth]{imagens/qr_adguard_public_dns.png}
+		}\\[0.1cm]
+		{\scriptsize (Toque ou escaneie)}
+	\end{minipage}
+\end{center}
+\vspace{0.3cm}
+
+% Caixa isolada para facilitar a cópia no celular
+\noindent
+\begin{center}
+	\begin{tcolorbox}[
+		colback=NordBackground, 
+		colframe=AdguardDNSBlue, 
+		width=1\linewidth, 
+		halign=center,       % Centraliza horizontalmente
+		valign=center,       % Centraliza verticalmente
+		boxrule=1pt, 
+		arc=2mm,
+		top=3mm,             % Ajuste fino da margem superior
+		bottom=3mm,           % Ajuste fino da margem inferior
+		left=5mm,
+		right=5mm
+		]
+		\Large \sffamily \textbf{\textcolor{AdguardDNSBlue}{https://family.adguard-dns.com/dns-query}}
+	\end{tcolorbox}
+	{\scriptsize (Selecione e copie)}
+\end{center}
+\vspace{0.3cm}
+
+\noindent
+Acesse a página fornecida pelo QR Code acima. (\textbf{Atenção:} Se você preferiu apenas copiar o endereço de texto na caixa acima, abra o seu navegador Brave e pule direto para o \textbf{Passo 6.1} deste tutorial).
+%Acesse a página fornecida pelo QR Code acima. (Se você preferiu apenas copiar o endereço de texto, abra o seu navegador e pule direto para o \textbf{Passo 5} deste tutorial).
+
+\vspace{0.3cm}
+\noindent
+Ao acessar o link pelo navegador Brave, a página ficará como no \textbf{Passo 1}. Role a tela para baixo até encontrar a seção \enquote{Nossos endereços de servidor}:
+
+\vspace{0.3cm}
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_17.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{1}{Suba esta página até o campo \enquote{Nossos endereços de servidor}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_18.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{2}{Toque em \enquote{Nossos endereços de servidor}}
+	\end{minipage}
+\end{minipage}
+\vspace{0.3cm}
+
+\noindent
+Em seguida, toque em \enquote{DNS-over-HTTPS} (\textbf{Passo 3}) para abrir as opções de servidores. Na seção \enquote{Servidor de proteção familiar} (\textbf{Passo 4}), toque no ícone de copiar no canto inferior direito. Com o endereço copiado, siga para os passos seguintes.
+
+\vspace{0.3cm}
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_19.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{3}{Toque em \enquote{DNS-over-HTTPS}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_20.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{4}{Toque em \enquote{Nossos endereços de servidor}}
+	\end{minipage}
+\end{minipage}
+\vspace{0.3cm}
+
+\noindent
+Agora vamos acessar as configurações do próprio navegador. Se você usou o QR Code, note no \textbf{Passo 5} que o ícone de copiar foi substituído por um 'visto' verde, confirmando que o endereço foi copiado com sucesso. 
+
+%Agora vamos acessar as configurações do próprio navegador. Note no \textbf{Passo 5} que o ícone de copiar foi substituído por um 'visto', confirmando que o endereço foi copiado com sucesso. No \textbf{Passo 6}, toque nos três pontinhos na vertical (menu do navegador), como indicado abaixo:
+
+\vspace{0.3cm}
+\noindent
+Com o endereço copiado, vá para o \textbf{Passo 6}: toque nos três pontinhos na vertical (menu do navegador), como indicado abaixo:
+
+\vspace{0.3cm}
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_21.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{5}{Ótimo, \enquote{Copiado}} \newline % O comando \newline ajusta altura da base dessa imagem com a imagem seguinte
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_22.png}\\[0.2cm]
+		% O \raggedright força o alinhamento à esquerda e mata os buracos brancos
+		\passo{AdguardDNSBlue}{6}{Toque nos três pontos dispostos na vertical}
+	\end{minipage}
+\end{minipage}
+\vspace{0.3cm}
+
+\noindent
+Ótimo! Estamos quase lá. Ao tocar nos três pontinhos, o Brave abrirá um menu de opções. Role esse menu para baixo até encontrar \enquote{Configurações} (\textbf{Passo 7}).
+
+\vspace{0.3cm}
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_22_1.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{6.1}{Toque nos três pontos dispostos na vertical}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_22_2.png}\\[0.2cm]
+		% O \raggedright força o alinhamento à esquerda e mata os buracos brancos
+		%\passo{AdguardDNSBlue}{6.3}{Toque em \enquote{Configurações}}
+		% O \raggedright força o alinhamento à esquerda e mata os buracos brancos
+		{\raggedright \textbf{\textcolor{AdguardDNSBlue}{\faMobile* \ Passo 6.2:}} Toque em \enquote{Configurações}}
+	\end{minipage}
+\end{minipage}
+\vspace{0.3cm}
+
+\vspace{0.3cm}
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_22_1.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{6.2}{Toque nos três pontos dispostos na vertical}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_22_2.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{6.1}{Toque em \enquote{Configurações}}
+	\end{minipage}
+\end{minipage}
+\vspace{0.3cm}
+
+\noindent
+Se você vei direto para cá do Ao tocar nos três pontinhos, o Brave abrirá um menu de opções. Role esse menu para baixo até encontrar \enquote{Configurações} (\textbf{Passo 7}).
+
+\vspace{0.3cm}
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_23.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{7}{Toque em \enquote{Configurações}}\newline
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_24.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{8}{Toque em \enquote{Proteções do Brave e privacidade}}
+	\end{minipage}
+\end{minipage}
+\vspace{0.3cm}
+
+\vspace{0.3cm}
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_25.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{9}{Toque em \enquote{Usar DNS seguro}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_26.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{10}{Habilite a opção \enquote{Escolher outro provedor}}
+	\end{minipage}
+\end{minipage}
+\vspace{0.3cm}
+
+\noindent
+Após ter ativado a opção \enquote{Escolher outro provedor}, como indicado no \textbf{Passo 10} acima, abrirá um campo onde você vai colar ou digitar o endereço do provedor. Se esqueceu, ou não lembra se ainda está na área de transferência, selecione e copie novamente aqui embaixo:
+
+% Caixa isolada para facilitar a cópia no celular
+\noindent
+\begin{center}
+	\begin{tcolorbox}[
+		colback=NordBackground, 
+		colframe=AdguardDNSBlue, 
+		width=1\linewidth, 
+		halign=center,       % Centraliza horizontalmente
+		valign=center,       % Centraliza verticalmente
+		boxrule=1pt, 
+		arc=2mm,
+		top=3mm,             % Ajuste fino da margem superior
+		bottom=3mm,           % Ajuste fino da margem inferior
+		left=5mm,
+		right=5mm
+		]
+		\Large \sffamily \textbf{\textcolor{AdguardDNSBlue}{https://family.adguard-dns.com/dns-query}}
+	\end{tcolorbox}
+	{\scriptsize (Selecione e copie)}
+\end{center}
+\vspace{0.3cm}
+
+\noindent
+Feito isso, siga para o \textbf{Passo 11} abaixo. 
+ 
+\vspace{0.3cm}
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_27.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{11}{Preencha essa campo aberto com o endereço}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_28.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{12}{Deve ficar como está mostrado acima}
+	\end{minipage}
+\end{minipage}
+\vspace{0.3cm}
+
+\noindent
+Se você fez exatamente como está mostrado no \textbf{Passo 12}, sua configuração direcionada oa navegador Brave está concluída. Parabéns!
+
+
+\vspace{0.3cm}
+\noindent
+Confira como deve ficar quando você sair da seção \textbf{\enquote{Usar DNS seguro}} no \textbf{Passo 13} abaixo.
+
+\vspace{0.3cm}
+\noindent
+\begin{minipage}{\textwidth}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[trim={0cm 0cm 0cm 0cm}, clip, width=\textwidth]{imagens/adgard_dns_family_29.png}\\[0.2cm]
+		\passo{AdguardDNSBlue}{13}{\textbf{Concluído!}}
+	\end{minipage}
+\end{minipage}
+\vspace{0.3cm}
+
+\noindent
+Agora você já pode fechar as configuração e navegar tranquilamente no Brave.
+\vspace{0.5cm}
+\begin{tcolorbox}[colback=NordBackground, colframe=AdguardDNSBlue, title=\faCheckCircle\ \textbf{Vantagem Extra}]
 	\textcolor{white}{Além de proteger as crianças contra sites perigosos, este filtro também bloqueia boa parte das propagandas em jogos e aplicativos gratuitos!}
 \end{tcolorbox}

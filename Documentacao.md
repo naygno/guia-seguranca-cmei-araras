@@ -205,3 +205,18 @@ Como estamos na segunda-feira, sugiro a seguinte meta para hoje:
 3.  **Faça o *Commit* no GitHub:** `feat(docs): adiciona explicacao sobre tipos de cofres e seguranca do PIN no Bitwarden`.
 
 **Está conseguindo compilar os capítulos lado a lado (Brave e Bitwarden) sem erros no TeXstudio?** Qualquer dúvida sobre o posicionamento dessas novas imagens, é só avisar!
+
+```tex
+\begin{tcolorbox}[colback=NordBackground, colframe=BraveOrange, coltext=white, title=\faQuestionCircle \ Atenção ao configurar o PIN]
+	Ao criar um \textbf{PIN}, o aplicativo fará uma pergunta técnica: \enquote{Exigir senha principal no reinício do aplicativo?}
+	
+		\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[0.5\linewidth]{imagens/bitwarden_aviso_pin.png}\\[0.2cm]
+		\passo{BitwardenBlue}{1}{Toque em \enquote{Sim}}
+	\end{minipage}
+		
+	\textbf{O que responder?} 
+	Nós recomendamos escolher \textbf{\enquote{SIM}}. Isso garante que, se o seu celular for desligado ou reiniciado, o PIN perderá o poder e o cofre exigirá a sua frase-senha longa. Isso impede que um criminoso tente adivinhar o seu PIN de 4 números repetidamente para abrir suas senhas.
+\end{tcolorbox}
+```
